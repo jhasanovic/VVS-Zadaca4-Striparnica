@@ -45,7 +45,7 @@ namespace Striparnica
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Grupa1}/{action=Index}/{id?}");
             });
         }
     }

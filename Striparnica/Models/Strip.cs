@@ -23,7 +23,7 @@ namespace Striparnica.Models
         {
             if ((DateTime)date < DateTime.Now.AddYears(-100))
                 return new ValidationResult("Datum izdavanja stripa ne smije biti stariji od 100 godina u prošlosti!");
-            else if ((DateTime)date > DateTime.Now.AddMonths(6))
+            else if ((DateTime)date > DateTime.Now.AddMonths(3))
                 return new ValidationResult("Datum izdavanja stripa ne smije biti noviji od 3 mjeseca u budućnosti!");
             else
                 return ValidationResult.Success;
